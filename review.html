@@ -278,6 +278,40 @@
         grid-template-columns: 1fr;
       }
     }
+
+    @media (max-width: 600px) {
+      .page-content {
+        padding: 2.5rem 1rem 3rem;
+      }
+
+      .review-hero,
+      .review-card,
+      .review-form-card {
+        padding: 1.1rem;
+        border-radius: 16px;
+      }
+
+      .review-shell {
+        gap: 0.9rem;
+      }
+
+      .review-highlight {
+        grid-template-columns: 1fr;
+      }
+
+      .review-item__top {
+        flex-direction: column;
+        gap: 0.3rem;
+      }
+
+      .review-item__rating {
+        align-self: flex-start;
+      }
+
+      .review-button {
+        width: 100%;
+      }
+    }
   </style>
 </head>
 

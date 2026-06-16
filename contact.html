@@ -56,6 +56,28 @@
       color: var(--red, #e63946);
       transition: color 0.25s ease;
     }
+
+    @media (max-width: 900px) {
+      .contact-row {
+        flex-wrap: wrap;
+      }
+
+      .contact-card {
+        max-width: none;
+        flex: 1 1 calc(50% - 10px);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .contact-row {
+        flex-direction: column;
+      }
+
+      .contact-card {
+        max-width: none;
+        flex: 1 1 100%;
+      }
+    }
   </style>
 </head>
 
