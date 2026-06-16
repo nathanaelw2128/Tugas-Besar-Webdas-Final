@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Vatican City</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    .contact-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .contact-card {
+      flex: 1;
+      max-width: 320px;
+      padding: 24px 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background: var(--white, #fff);
+    }
+
+    .contact-row {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+
+
+    .page-content {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2cm 2rem;
+      min-height: 50vh;
+    }
+
+    .contact-card {
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+      border-color: var(--red, #e63946);
+    }
+
+    .contact-card:hover h2 {
+      color: var(--red, #e63946);
+      transition: color 0.25s ease;
+    }
+
+    @media (max-width: 900px) {
+      .contact-row {
+        flex-wrap: wrap;
+      }
+
+      .contact-card {
+        max-width: none;
+        flex: 1 1 calc(50% - 10px);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .contact-row {
+        flex-direction: column;
+      }
+
+      .contact-card {
+        max-width: none;
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <span class="navbar__logo-main">Vatican</span>
+        <span class="navbar__logo-sub">City</span>
+      </a>
+
+      <ul class="navbar__links" id="navLinks">
+        <li><a href="landmarks.html">Landmarks</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="review.html">Review</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <button class="navbar__hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <header class="lm-header">
+    <div class="lm-header__inner">
+      <p class="lm-header__eyebrow">Vol. V — Connection & Pilgrimage</p>
+      <h1 class="lm-header__title">Get In<br /><em>Touch</em></h1>
+      <p class="lm-header__desc">
+        Plan your journey, reach out with administrative or academic inquiries, or connect with our support team to
+        guide your exploration of the eternal city-state.
+      </p>
+    </div>
+  </header>
+
+  <main class="page-content">
+
+    <div class="contact-container">
+      <div class="contact-row">
+        <div class="contact-card">
+          <h2>📍 Address</h2>
+          <p>Vatican City, 00120 Vatican City State</p>
+        </div>
+        <div class="contact-card">
+          <h2>📞 Contact Us</h2>
+          <p>+39 06 6982</p>
+        </div>
+      </div>
+
+      <div class="contact-row">
+        <div class="contact-card contact-card--link">
+          <h2>🌐 Official Website</h2>
+          <p><a href="https://www.vatican.va" target="_blank">www.vatican.va</a></p>
+        </div>
+        <div class="contact-card contact-card--link">
+          <h2>📰 Vatican News</h2>
+          <p><a href="https://www.vaticannews.va" target="_blank">www.vaticannews.va</a></p>
+        </div>
+        <div class="contact-card contact-card--link">
+          <h2>📻 Vatican Media</h2>
+          <p><a href="https://www.comunicazione.va" target="_blank">www.comunicazione.va</a></p>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+
+
+  <footer class="footer">
+    <div class="footer__top">
+
+      <div class="footer__brand">
+        <p class="footer__brand-eyebrow">✦ Sovereign City-State ✦</p>
+        <h3 class="footer__brand-name">Vatican<br /><span>City</span></h3>
+        <p class="footer__brand-tagline">The Heart of History and Faith</p>
+      </div>
+
+      <nav class="footer__nav">
+        <div class="footer__nav-col">
+          <h4 class="footer__nav-title">Pages</h4>
+          <ul>
+            <li><a href="landmarks.html">Landmarks</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="review.html">Review</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav-col">
+          <h4 class="footer__nav-title">Discover</h4>
+          <ul>
+            <li><a href="landmarks.html">St. Peter's Basilica</a></li>
+            <li><a href="landmarks.html">Sistine Chapel</a></li>
+            <li><a href="landmarks.html">Vatican Museums</a></li>
+            <li><a href="landmarks.html">Vatican Gardens</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav-col">
+          <h4 class="footer__nav-title">Info</h4>
+          <ul>
+            <li><a href="history.html">About Vatican City</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div>
+        <h4 class="footer__tips-title">Visit Tips</h4>
+        <ul class="footer__tips-list">
+          <li class="footer__tip">
+            <span class="footer__tip-num">01</span>
+            <div class="footer__tip-body">
+              <strong>Dress Code</strong>
+              <span>Cover shoulders &amp; knees. No sleeveless tops or shorts inside.</span>
+            </div>
+          </li>
+          <li class="footer__tip">
+            <span class="footer__tip-num">02</span>
+            <div class="footer__tip-body">
+              <strong>Opening Hours</strong>
+              <span>Basilica: daily 07:00–19:00. Museums: Mon–Sat 09:00–18:00.</span>
+            </div>
+          </li>
+          <li class="footer__tip">
+            <span class="footer__tip-num">03</span>
+            <div class="footer__tip-body">
+              <strong>Book in Advance</strong>
+              <span>Buy tickets online to skip 2–3 hour walk-in queues.</span>
+            </div>
+          </li>
+          <li class="footer__tip">
+            <span class="footer__tip-num">04</span>
+            <div class="footer__tip-body">
+              <strong>Silence &amp; Respect</strong>
+              <span>No flash photography. Keep voices low inside the Chapel.</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer__credits-title">Developer Credits</h4>
+        <div class="footer__team">
+          <div class="footer__member">
+            <div class="footer__member-avatar">DN</div>
+            <div>
+              <span class="footer__member-name">Darren Nicholas Heng</span>
+              <span class="footer__member-id">NRP · 2572019</span>
+            </div>
+          </div>
+          <div class="footer__member">
+            <div class="footer__member-avatar">DA</div>
+            <div>
+              <span class="footer__member-name">Daniel Arya Kristantara</span>
+              <span class="footer__member-id">NRP · 2572023</span>
+            </div>
+          </div>
+          <div class="footer__member">
+            <div class="footer__member-avatar">NW</div>
+            <div>
+              <span class="footer__member-name">Nathanael Wijaya</span>
+              <span class="footer__member-id">NRP · 2572028</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer__divider"></div>
+
+    <div class="footer__bottom">
+      <p class="footer__copy">© 2026 Kelompok Vatikan — Tugas Besar Web Dasar. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
